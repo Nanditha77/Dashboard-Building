@@ -1,0 +1,165 @@
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 0 1.5rem;
+}
+
+.controls-left {
+  display: flex;
+  align-items: center;
+}
+
+.controls-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Add Widget Button */
+.add-widget-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  color: #495057;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-widget-btn:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.add-widget-btn .icon {
+  font-size: 0.8rem;
+}
+
+/* Control Buttons */
+.control-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+/* Time Selector Dropdown */
+.time-selector {
+  position: relative;
+}
+
+.time-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px solid #05305cff;
+  color: #072f57ff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 120px;
+}
+
+.time-dropdown-btn:hover {
+}
+
+.clock-icon {
+  font-size: 0.9rem;
+}
+
+.chevron {
+  font-size: 0.7rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background-color: white;
+  border: 1px solid #0a5aaaff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 140px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item.active {
+  color: white;
+}
+
+.dropdown-item.active:hover {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-controls {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .controls-left,
+  .controls-right {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .controls-right {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .time-dropdown-btn {
+    min-width: auto;
+    flex: 1;
+  }
+}
