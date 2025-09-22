@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Vercel Deployed Link: 
+https://dashboard-building.vercel.app/ (Please copy this link from here and paste it in any browser to check my design and work).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dashboard Widget Management Application
 
-## Available Scripts
+A React application for managing widgets dynamically using Redux Toolkit.
 
-In the project directory, you can run:
+## Prerequisites
 
-### `npm start`
+Need to have **Node.js** installed on computer. This is required because my project uses Create React App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Steps to Run the Application Locally
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/Nanditha77/Dashboard-Building.git
+```
 
-### `npm test`
+### Step 2: Navigate to Project Folder
+```bash
+cd Dashboard-Building
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 3: Install Dependencies
+```bash
+npm install
+```
+This will install all the packages listed in `package.json` file:
+- React and React-DOM
+- Redux Toolkit
+- React-Redux  
+- React Icons
+- React Scripts  
 
-### `npm run build`
+### Step 4: Start the Application
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 5: View in Browser
+The application will automatically open in browser at:
+```
+http://localhost:3000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Add Widget:**
+1. Click "+" card in any category
+2. Fill in widget name and content
+3. Select category
+4. Click "Add Widget"
 
-### `npm run eject`
+**Remove Widget:**
+1. Click the "X" button on any widget
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Search:**
+1. Type in the search bar to filter widgets in real-time
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Available Commands
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `npm run build` - Create production build
+- `npm test` - Run tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technology Used
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React** - Frontend framework
+- **Redux Toolkit** - State management
+- **Create React App** - Development environment
