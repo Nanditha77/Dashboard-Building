@@ -1,7 +1,6 @@
 // Widget.js - Using Redux for state management
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-const [activeTab, setActiveTab] = useState('add'); 
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import {
   addWidget,
@@ -29,6 +28,7 @@ const Widget = () => {
   const totalWidgetsCount = useSelector(selectTotalWidgetsCount);
   
   // Local state for form
+  const [activeTab, setActiveTab] = useState('add'); 
   const [newWidget, setNewWidget] = useState({ name: '', text: '' });
 
   const handleAddWidget = () => {
