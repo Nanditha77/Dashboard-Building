@@ -1,6 +1,7 @@
 // Widget.js - Using Redux for state management
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+const [activeTab, setActiveTab] = useState('add'); 
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import {
   addWidget,
@@ -128,77 +129,137 @@ const Widget = () => {
         )}
       </div>
 
-      {isAddWidgetModalOpen && (
-        <div className="modal-overlay" onClick={handleCloseAddWidgetModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h3>Add New Widget</h3>
-              <button 
-                className="modal-close-btn"
-                onClick={handleCloseAddWidgetModal}
+     {isAddWidgetModalOpen && (
+  <div className="modal-overlay" onClick={handleCloseAddWidgetModal}>
+    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <div className="modal-header">
+        <h3>Widget Management</h3>
+        <button 
+          className="modal-close-btn"
+          onClick={handleCloseAddWidgetModal}
+        >
+          <FaTimes />
+        </button>
+      </div>
+      
+      {/* ADD TABS */}
+      <div className="modal-tabs">
+        <button 
+          className={`tab-btn ${activeTab === 'add' ? 'active' : ''}`}
+          onClick={() => setActiveTab('add')}
+        >
+          Add Widget
+        </button>
+        <button 
+          className={`tab-btn ${activeTab === 'manage' ? 'active' : ''}`}
+          onClick={() => setActiveTab('manage')}
+        >
+          Manage Widgets
+        </button>
+      </div>
+      
+      <div className="modal-body">
+        {activeTab === 'add' ? (
+          // Your existing add widget form
+          <>
+            <div className="form-group">
+              <label>Select Category:</label>
+              <select 
+                value={selectedCategory} 
+                onChange={(e) => dispatch(setSelectedCategory(e.target.value))}
+                className="form-select"
               >
-                <FaTimes />
-              </button>
+                <option value="">Choose a category...</option>
+                {dashboardData.categories.map(category => (
+                  <option key={category.id} value={category.id}>
+                    {category.name}
+                  </option>
+                ))}
+              </select>
             </div>
             
-            <div className="modal-body">
-              <div className="form-group">
-                <label>Select Category:</label>
-                <select 
-                  value={selectedCategory} 
-                  onChange={(e) => dispatch(setSelectedCategory(e.target.value))}
-                  className="form-select"
-                >
-                  <option value="">Choose a category...</option>
-                  {dashboardData.categories.map(category => (
-                    <option key={category.id} value={category.id}>
-                      {category.name}
-                    </option>
+            <div className="form-group">
+              <label>Widget Name:</label>
+              <input
+                type="text"
+                value={newWidget.name}
+                onChange={(e) => setNewWidget({...newWidget, name: e.target.value})}
+                placeholder="Enter widget name"
+                className="form-input"
+              />
+            </div>
+            
+            <div className="form-group">
+              <label>Widget Text:</label>
+              <textarea
+                value={newWidget.text}
+                onChange={(e) => setNewWidget({...newWidget, text: e.target.value})}
+                placeholder="Enter widget content"
+                className="form-textarea"
+                rows="4"
+              />
+            </div>
+          </>
+        ) : (
+          // NEW: Manage widgets with checkboxes
+          <div className="manage-widgets-section">
+            <p className="section-description">
+              Uncheck widgets to remove them from categories
+            </p>
+            {dashboardData.categories.map(category => (
+              <div key={category.id} className="category-manage-section">
+                <h4 className="category-manage-title">{category.name}</h4>
+                <div className="widgets-checkbox-list">
+                  {category.widgets.map(widget => (
+                    <label key={widget.id} className="widget-checkbox-item">
+                      <input
+                        type="checkbox"
+                        checked={true}
+                        onChange={() => handleRemoveWidget(category.id, widget.id)}
+                        className="widget-checkbox"
+                      />
+                      <span className="widget-checkbox-label">{widget.name}</span>
+                    </label>
                   ))}
-                </select>
+                  {category.widgets.length === 0 && (
+                    <p className="no-widgets-text">No widgets in this category</p>
+                  )}
+                </div>
               </div>
-              
-              <div className="form-group">
-                <label>Widget Name:</label>
-                <input
-                  type="text"
-                  value={newWidget.name}
-                  onChange={(e) => setNewWidget({...newWidget, name: e.target.value})}
-                  placeholder="Enter widget name"
-                  className="form-input"
-                />
-              </div>
-              
-              <div className="form-group">
-                <label>Widget Text:</label>
-                <textarea
-                  value={newWidget.text}
-                  onChange={(e) => setNewWidget({...newWidget, text: e.target.value})}
-                  placeholder="Enter widget content"
-                  className="form-textarea"
-                  rows="4"
-                />
-              </div>
-            </div>
-            
-            <div className="modal-footer">
-              <button 
-                className="btn btn-secondary"
-                onClick={handleCloseAddWidgetModal}
-              >
-                Cancel
-              </button>
-              <button 
-                className="btn btn-primary"
-                onClick={handleAddWidget}
-                disabled={!newWidget.name || !newWidget.text || !selectedCategory}
-              >
-                Add Widget
-              </button>
-            </div>
+            ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
+      
+      <div className="modal-footer">
+        {activeTab === 'add' ? (
+          <>
+            <button 
+              className="btn btn-secondary"
+              onClick={handleCloseAddWidgetModal}
+            >
+              Cancel
+            </button>
+            <button 
+              className="btn btn-primary"
+              onClick={handleAddWidget}
+              disabled={!newWidget.name || !newWidget.text || !selectedCategory}
+            >
+              Add Widget
+            </button>
+          </>
+        ) : (
+          <button 
+            className="btn btn-primary"
+            onClick={handleCloseAddWidgetModal}
+          >
+            Done
+          </button>
+        )}
+      </div>
+    </div>
+  </div>
+)}
     </div>
   );
 };
