@@ -133,7 +133,7 @@ const Widget = () => {
   <div className="modal-overlay" onClick={handleCloseAddWidgetModal}>
     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
       <div className="modal-header">
-        <h3>Widget Management</h3>
+        <h3>Add Widget</h3>
         <button 
           className="modal-close-btn"
           onClick={handleCloseAddWidgetModal}
