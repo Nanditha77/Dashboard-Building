@@ -210,7 +210,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 0.4rem 2rem;
   background: #062355ff;
   border-bottom: 1px solid #e9ecef;
   position: sticky;
@@ -220,7 +220,7 @@
 
 .modal-header h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #f8f7faff;
 }
