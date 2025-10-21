@@ -35,7 +35,7 @@ const CategoryCard = () => {
       </div>
       
       <div className="controls-right">
-        {/* ✅ FIX: Add onClick handler */}
+        {/* ✅ FIXED: Added onClick handler */}
         <button className="add-widget-btn" onClick={handleAddWidgetClick}>
           <FaPlus className="icon" />
           Add Widget
