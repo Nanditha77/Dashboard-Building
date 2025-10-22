@@ -165,7 +165,7 @@
   border-radius: 6px;
   padding: 0.3rem;
   color: #6c757d;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .add-widget-card:hover .add-widget-content {
@@ -173,7 +173,7 @@
 }
 
 .add-icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* Modal Styles */
