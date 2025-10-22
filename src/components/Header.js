@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-left">
-        <h5>Home {'>'} Dashboard V2</h5>
+        <h5>Home {'>'} <h6>Dashboard V2</h6></h5>
       </div>
       
       <div className="header-center">
