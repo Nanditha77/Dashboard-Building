@@ -327,9 +327,7 @@
 .section-description {
   background: #e8f4fd;
   padding: 1rem 1.25rem;
-  border-radius: 8px;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #0d6efd;
 }
 
 .section-description p {
