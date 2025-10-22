@@ -10,7 +10,7 @@ const initialDashboardData = {
         {
           id: 'widget-1',
           name: 'Cloud Accounts',
-          text: 'Total: 4 Cloud Accounts\n\nConnected (2):\n  • AWS Production\n  • Azure Development\n\nNot Connected (2):\n  • GCP Staging\n  • AWS Testing'
+          text: 'Total: 4 Cloud Accounts\n\nConnected (2):\n  • AWS Production\n  • Azure Development\n'
         },
         {
           id: 'widget-2',
