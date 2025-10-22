@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 1.5rem;
 }
 
 .header-left {
@@ -41,14 +42,14 @@
 }
 
 .search-input:focus {
-  border: #07192bff
+  border-color: #07192bff;
 }
-
 
 .header-right {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  gap: 0.75rem;
   padding-right: 1rem;
 }
 
@@ -59,7 +60,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   cursor: pointer;
 }
 
@@ -73,7 +73,18 @@
   cursor: pointer;
 }
 
-/* Responsive adjustments */
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+  }
+  
+  .header-center {
+    padding: 0 1rem;
+  }
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -86,13 +97,41 @@
   .header-right {
     flex: none;
     width: 100%;
-  }
-  
-  .header-center {
     padding: 0;
   }
   
+  .header-left {
+    text-align: center;
+  }
+  
+  .header-left h5 {
+    font-size: 0.85rem;
+  }
+  
+  .header-center {
+    order: 2;
+  }
+  
   .header-right {
+    order: 1;
     justify-content: center;
+    padding-right: 0;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
+  
+  .header-left h5 {
+    font-size: 0.8rem;
+  }
+  
+  .notification-icon,
+  .user-icon {
+    width: 36px;
+    height: 36px;
   }
 }
