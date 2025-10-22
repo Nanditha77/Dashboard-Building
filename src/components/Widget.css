@@ -78,7 +78,6 @@
   margin-bottom: 2rem;
 }
 
-/* Widget Cards */
 .widget-card {
   background: white;
   border-radius: 12px;
@@ -138,7 +137,7 @@
 
 .add-widget-card {
   border: 1px solid #e9ecef;
-  background: #fafbfc;
+  background: white;
   cursor: pointer;
   display: flex;
   align-items: center;
