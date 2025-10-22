@@ -15,7 +15,7 @@ const initialDashboardData = {
         {
           id: 'widget-2',
           name: 'Cloud Account Risk Assessment',
-          text: 'Total Resources Assessed: 9,659\n\nRisk Distribution:\n• Failed: 1,689 (68%)\n• Warning: 681 (27%)\n• Not Available: 36 (1%)\n• Passed: 7,253 (4%)\n\nCritical Issues: 234\nHigh Priority: 892\nLast Scan: 2 hours ago'
+          text: 'Total Resources Assessed: 9,659\n\nRisk Distribution:\n• Failed: 1,689 (68%)\n• Warning: 681 (27%)\n'
         }
       ]
     },
