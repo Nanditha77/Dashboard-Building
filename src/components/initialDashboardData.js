@@ -26,12 +26,12 @@ const initialDashboardData = {
         {
           id: 'widget-3',
           name: 'Top 5 Namespace Specific Alerts',
-          text: 'Namespace Alert Distribution:\n\n1. kube-system: 145 alerts\n2. default: 89 alerts\n3. monitoring: 67 alerts\n4. production: 54 alerts\n'
+          text: 'Namespace Alert Distribution:\n\n1. kube-system: 145 alerts\n2. default: 89 alerts\n3. monitoring: 67 alerts\n'
         },
           {
           id: 'widget-4',
           name: 'Workload Alerts',
-          text: 'Recent Workload Security Alerts:\n\n• High CPU Usage: 23 workloads affected\n• Memory Threshold Exceeded: 18 workloads\n• Suspicious Process Detected: 7 workloads\n• Unauthorized Access Attempts: 12 instances\n'
+          text: 'Recent Workload Security Alerts:\n\n• High CPU Usage: 23 workloads affected\n• Memory Threshold Exceeded: 18 workloads\n• Suspicious Process Detected: 7 workloads\n'
         }
       ]
     },
@@ -42,12 +42,12 @@ const initialDashboardData = {
         {
           id: 'widget-5',
           name: 'Image Risk Assessment',
-          text: 'Total Images Scanned: 1,470\n\nVulnerability Distribution:\n• Critical: 9 images (0.6%)\n• High: 150 images (10.2%)\n• Medium: 487 images (33.1%)\n• Low: 824 images (56.1%)\n'
+          text: 'Total Images Scanned: 1,470\n\nVulnerability Distribution:\n• Critical: 9 images (0.6%)\n• High: 150 images (10.2%)\n'
         },
         {
           id: 'widget-6',
           name: 'Image Security Issues',
-          text: 'Security Issues by Severity:\n\n• Critical: 2 issues\n  (Immediate action required)\n• High: 2 issues\n  (Patches available)\n• Medium: 2 issues\n'
+          text: 'Security Issues by Severity:\n\n• Critical: 2 issues\n  (Immediate action required)\n• High: 2 issues\n'
         }
       ]
     }
