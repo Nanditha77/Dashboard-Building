@@ -15,7 +15,10 @@
   font-weight: 500;
 }
 .header-left h6 {
+  margin: 0;
+  font-size: 0.9rem;
   color: #0d0757ff;
+  font-weight: 500;
 }
 .header-center {
   flex: 2;
