@@ -325,14 +325,13 @@
 }
 
 .section-description {
-  background: #e8f4fd;
   margin-bottom: 1.5rem;
 }
 
 .section-description p {
   margin: 0;
   color: #052847ff;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
