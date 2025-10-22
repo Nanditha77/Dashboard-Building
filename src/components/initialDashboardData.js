@@ -26,8 +26,7 @@ const initialDashboardData = {
         {
           id: 'widget-3',
           name: 'Top 5 Namespace Specific Alerts',
-          text: 'Namespace Alert Distribution:\n\n1. kube-system: 145 alerts\n2. default: 89 alerts\n3. monitoring: 67 alerts\n4. production: 54 alerts\n5. ingress-nginx: 32 alerts\n\nTotal Active Alerts: 387\nCritical: 23 | High: 145 | Medium: 219'
-        },
+          text: 'Namespace Alert Distribution:\n\n1. kube-system: 145 alerts\n2. default: 89 alerts\n3. monitoring: 67 alerts\n4. production: 54 alerts\n'
         {
           id: 'widget-4',
           name: 'Workload Alerts',
