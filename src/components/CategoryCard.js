@@ -22,9 +22,8 @@ const CategoryCard = () => {
     setIsDropdownOpen(false);
   };
 
-  // ✅ FIX: Add click handler for Add Widget button
   const handleAddWidgetClick = () => {
-    dispatch(setSelectedCategory('')); // Clear any pre-selected category
+    dispatch(setSelectedCategory(''));
     dispatch(toggleAddWidgetModal(true));
   };
 
@@ -35,7 +34,6 @@ const CategoryCard = () => {
       </div>
       
       <div className="controls-right">
-        {/* ✅ FIXED: Added onClick handler */}
         <button className="add-widget-btn" onClick={handleAddWidgetClick}>
           <FaPlus className="icon" />
           Add Widget

@@ -27,9 +27,8 @@ const Widget = () => {
   const filteredData = useSelector(selectFilteredDashboardData);
   const totalWidgetsCount = useSelector(selectTotalWidgetsCount);
   
-  // Local state
   const [newWidget, setNewWidget] = useState({ name: '', text: '' });
-  const [activeTab, setActiveTab] = useState('add'); // 'add' or 'manage'
+  const [activeTab, setActiveTab] = useState('add'); 
 
   const handleAddWidget = () => {
     if (newWidget.name && newWidget.text && selectedCategory) {
@@ -68,7 +67,7 @@ const Widget = () => {
 
   return (
     <div className="dashboard">
-      {/* Search Results Summary */}
+    
       {searchTerm && (
         <div className="search-results-summary">
           <p>

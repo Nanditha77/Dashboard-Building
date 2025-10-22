@@ -67,7 +67,6 @@ const SearchBar = ({ placeholder = "Search widgets...", onSearch }) => {
         </div>
       </form>
       
-      {/* Search Results Info */}
       {searchTerm && (
         <div className="search-results-info">
           <span className="search-results-text">
