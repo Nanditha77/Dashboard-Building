@@ -166,6 +166,9 @@ const Widget = () => {
                 // ADD WIDGET TAB
                 <>
                   <div className="form-group">
+                  <div className="section-description">
+                    <p>Personalize your dashboard by adding the following widget</p>
+                  </div>
                     <label>Select Category: *</label>
                     <select 
                       value={selectedCategory} 
@@ -206,9 +209,7 @@ const Widget = () => {
               ) : (
                 // MANAGE WIDGETS TAB
                 <div className="manage-widgets-section">
-                  <div className="section-description">
-                    <p>Uncheck widgets to remove them from the dashboard</p>
-                  </div>
+                  
                   
                   {dashboardData.categories.map(category => (
                     <div key={category.id} className="category-manage-section">
