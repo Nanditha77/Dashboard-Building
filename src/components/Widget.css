@@ -157,10 +157,10 @@
 
 .add-widget-content {
   display: flex;
-  border: 1px solid #5d6063ff;
+  border: 1px #979b9eff;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.4rem;
   color: #6c757d;
   font-weight: 500;
 }
