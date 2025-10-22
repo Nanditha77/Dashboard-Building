@@ -31,7 +31,7 @@ const initialDashboardData = {
           {
           id: 'widget-4',
           name: 'Workload Alerts',
-          text: 'Recent Workload Security Alerts:\n\n• High CPU Usage: 23 workloads affected\n• Memory Threshold Exceeded: 18 workloads\n• Suspicious Process Detected: 7 workloads\n• Unauthorized Access Attempts: 12 instances\n• Pod Security Violations: 15 instances\n\nLast Updated: 5 minutes ago'
+          text: 'Recent Workload Security Alerts:\n\n• High CPU Usage: 23 workloads affected\n• Memory Threshold Exceeded: 18 workloads\n• Suspicious Process Detected: 7 workloads\n• Unauthorized Access Attempts: 12 instances\n'
         }
       ]
     },
@@ -42,12 +42,12 @@ const initialDashboardData = {
         {
           id: 'widget-5',
           name: 'Image Risk Assessment',
-          text: 'Total Images Scanned: 1,470\n\nVulnerability Distribution:\n• Critical: 9 images (0.6%)\n• High: 150 images (10.2%)\n• Medium: 487 images (33.1%)\n• Low: 824 images (56.1%)\n\nTotal Vulnerabilities Found: 2,847\nLast Full Scan: 15 minutes ago'
+          text: 'Total Images Scanned: 1,470\n\nVulnerability Distribution:\n• Critical: 9 images (0.6%)\n• High: 150 images (10.2%)\n• Medium: 487 images (33.1%)\n• Low: 824 images (56.1%)\n'
         },
         {
           id: 'widget-6',
           name: 'Image Security Issues',
-          text: 'Security Issues by Severity:\n\n• Critical: 2 issues\n  (Immediate action required)\n• High: 2 issues\n  (Patches available)\n• Medium: 2 issues\n  (Scheduled for review)\n• Low: 1 issue\n  (Informational only)\n\nTotal Affected Images: 7\nCompliance Status: 94% passed'
+          text: 'Security Issues by Severity:\n\n• Critical: 2 issues\n  (Immediate action required)\n• High: 2 issues\n  (Patches available)\n• Medium: 2 issues\n'
         }
       ]
     }
