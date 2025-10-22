@@ -46,13 +46,15 @@ http://localhost:3000
 ## How to Use
 
 **Add Widget:**
-1. Click "+" card in any category
+1. Click "+" card in any category or "Add Widget" at the top.
 2. Fill in widget name and content
 3. Select category
 4. Click "Add Widget"
 
 **Remove Widget:**
 1. Click the "X" button on any widget
+2. Users can go to add category section and in there click Manage Widget to uncheck
+from category list
 
 **Search:**
 1. Type in the search bar to filter widgets in real-time
