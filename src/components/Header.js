@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-left">
-        <h5>Home {'>'} <h6 style={{ color: "#0b2347ff" }}>Dashboard V2</h6></h5>
+        <h5>Home {'>'} <span className="dashboard-text">Dashboard V2</span></h5>
       </div>
       
       <div className="header-center">

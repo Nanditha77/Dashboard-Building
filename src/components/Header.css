@@ -15,6 +15,11 @@
   font-weight: 500;
 }
 
+.dashboard-text {
+  color: #07192bff;
+  font-weight: 600;
+}
+
 .header-center {
   flex: 2;
   display: flex;
